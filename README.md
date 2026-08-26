@@ -30,6 +30,7 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 | **Data retention** | A schedule for how long AI-related data (prompts, outputs, logs) is kept and when it's deleted |
 | **Incident response** | A runbook for triaging, containing, and closing out AI incidents |
 | **Reporting** | A board/executive reporting template to keep leadership informed on AI risk posture |
+| **Sector packs** | Regulatory overlays for [banking/financial services](sectors/banking-financial-services/README.md), [healthcare](sectors/healthcare/README.md), [insurance](sectors/insurance/README.md), [public sector](sectors/public-sector/README.md), and [retail/e-commerce](sectors/retail-ecommerce/README.md) |
 
 ## Quick start
 
@@ -41,8 +42,9 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 5. **Gate deployment**: every AI feature or tool goes through the [Pre-Deployment Checklist](checklists/pre-deployment-checklist.md) (low-risk or medium/high-risk track) before go-live — Medium/High risk systems affecting people also get a [Bias & Fairness Test](templates/bias-fairness-testing-guide.md).
 6. **Assign ownership**: use [Roles & RACI](docs/roles-and-raci.md) to name who's accountable for each step — even if it's one person wearing four hats.
 7. **Be ready for incidents and reporting**: keep the [Incident Response Runbook](templates/incident-response-runbook.md) on hand, and brief leadership periodically with the [Board Reporting Template](templates/board-reporting-template.md).
+8. **Apply your sector pack**: if you're in banking, healthcare, insurance, public sector, or retail, layer the matching [sector pack](sectors/README.md) on top for regulatory-specific risk categories and checklist items.
 
-That's a working Level 2 governance program (see the [Maturity Model](docs/maturity-model.md)). Everything else in `docs/` is there for when you want to go deeper.
+That's a working Level 2 governance program (see the [Maturity Model](docs/maturity-model.md)). Everything else in `docs/` and `sectors/` is there for when you want to go deeper.
 
 ## Repository structure
 
@@ -69,6 +71,12 @@ That's a working Level 2 governance program (see the [Maturity Model](docs/matur
         ├── iso-42001-crosswalk.md        # Clause/Annex A mapping to ISO/IEC 42001
         ├── eu-ai-act-risk-tiers.md       # Risk-tier triage against the EU AI Act
         └── owasp-ai-mapping.md           # LLM/ML Top 10 security checklist mapping
+sectors/                                  # Regulatory overlays layered on the core templates
+├── banking-financial-services/README.md  # SR 11-7, ECOA/Reg B, fair lending, BSA/AML
+├── healthcare/README.md                  # HIPAA, FDA SaMD, clinical/coverage AI
+├── insurance/README.md                   # NAIC AI Model Bulletin, state rating/claims rules
+├── public-sector/README.md               # Due process, procurement, algorithmic accountability laws
+└── retail-ecommerce/README.md            # FTC dark patterns, algorithmic pricing, AI-washing
 ```
 
 ## How deep to go
@@ -76,6 +84,7 @@ That's a working Level 2 governance program (see the [Maturity Model](docs/matur
 - **Just need something today?** Adopt the policy, use the intake form and pre-deployment checklist. That alone puts a stop to ungoverned AI sprawl.
 - **Shipping AI features regularly?** Add the risk assessment and vendor due-diligence templates into your existing PR/release process.
 - **Need to show this to auditors, customers, or a board?** Use the [NIST AI RMF crosswalk](docs/standards/nist-ai-rmf-crosswalk.md) and [maturity model](docs/maturity-model.md) to frame what you've built in terms they recognize. If you're EU-exposed, also check [EU AI Act risk tiers](docs/standards/eu-ai-act-risk-tiers.md); if certification is on the table, see the [ISO/IEC 42001 crosswalk](docs/standards/iso-42001-crosswalk.md).
+- **In a regulated industry?** Check the [sector packs](sectors/README.md) — banking, healthcare, insurance, public sector, and retail each get sector-specific risk categories and regulatory context layered on top of the core templates.
 
 ## Scope and limitations
 
