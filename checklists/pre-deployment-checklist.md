@@ -20,7 +20,7 @@ Everything in the low-risk track, plus:
 - [ ] Security review completed (data flows, access controls, secrets handling)
 - [ ] Human review/override step tested and confirmed working, not just documented
 - [ ] Bias/fairness check run if the system affects people differentially (even a basic disparity check across known groups)
-- [ ] Prompt injection / adversarial input testing done for anything accepting untrusted input — see [OWASP AI mapping](../docs/owasp-ai-mapping.md)
+- [ ] Prompt injection / adversarial input testing done for anything accepting untrusted input — see [OWASP AI mapping](../docs/standards/owasp-ai-mapping.md)
 - [ ] Rollback plan documented — how do you turn this off fast if it misbehaves?
 - [ ] Monitoring/alerting in place for anomalous outputs or usage spikes
 - [ ] User-facing disclosure drafted, if users interact with the AI directly

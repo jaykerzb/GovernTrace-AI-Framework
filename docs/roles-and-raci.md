@@ -8,7 +8,7 @@ Most organizations adopting this framework won't have a dedicated "AI Governance
 |---|---|---|
 | **AI Governance Lead** | Head of IT, Legal/Compliance lead, or a designated senior individual | Owns this framework, reviews intake forms, keeps the tool inventory current, chairs periodic review |
 | **System/Use-Case Owner** | Whoever requested or built the AI feature | Completes the Risk Assessment, is accountable for the system's ongoing behavior |
-| **Security Reviewer** | IT/Security lead (or outsourced security contact) | Reviews Medium/High-risk systems for the security-specific items (see [OWASP mapping](owasp-ai-mapping.md)) |
+| **Security Reviewer** | IT/Security lead (or outsourced security contact) | Reviews Medium/High-risk systems for the security-specific items (see [OWASP mapping](standards/owasp-ai-mapping.md)) |
 | **Executive Sponsor** | Relevant department head or exec | Signs off on High-risk deployments; owns the "unacceptable risk = no" call |
 
 One person can hold multiple roles in a small org — the point is that each responsibility has a named owner, not that you need four people.

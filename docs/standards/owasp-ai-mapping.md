@@ -1,6 +1,6 @@
 # Mapping to OWASP AI Security Guidance
 
-This framework's security-relevant checks draw on the [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) and [OWASP Machine Learning Security Top 10](https://owasp.org/www-project-machine-learning-security-top-10/). Use this as a quick lookup when doing the security portion of a [Risk Assessment](../templates/ai-risk-assessment.md) or [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md).
+This framework's security-relevant checks draw on the [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) and [OWASP Machine Learning Security Top 10](https://owasp.org/www-project-machine-learning-security-top-10/). Use this as a quick lookup when doing the security portion of a [Risk Assessment](../../templates/ai-risk-assessment.md) or [Pre-Deployment Checklist](../../checklists/pre-deployment-checklist.md).
 
 ## LLM-specific risks (OWASP LLM Top 10)
 
@@ -25,8 +25,10 @@ This framework's security-relevant checks draw on the [OWASP Top 10 for LLM Appl
 
 ## How to use this in practice
 
-1. During a [Risk Assessment](../templates/ai-risk-assessment.md), for any system that accepts untrusted input (user prompts, uploaded files, web content, retrieved documents), walk the LLM Top 10 table above and note mitigations.
+1. During a [Risk Assessment](../../templates/ai-risk-assessment.md), for any system that accepts untrusted input (user prompts, uploaded files, web content, retrieved documents), walk the LLM Top 10 table above and note mitigations.
 2. For systems with fine-tuning, custom training, or model-hosting components, also walk the ML Top 10 selection.
 3. Findings feed directly into Risk Assessment §3 (failure modes) and §4 (controls).
 
 This is a working checklist, not a penetration test. High-risk or customer-facing systems should get an actual security review or pen test from someone qualified to do adversarial testing.
+
+See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md)

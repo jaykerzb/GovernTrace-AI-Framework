@@ -51,4 +51,4 @@ Report suspected data leakage, harmful/biased output, or policy violations to [c
 Violations are handled under [Org Name]'s standard conduct/disciplinary policy. This policy is reviewed at least annually and whenever new AI regulation or major AI tooling changes affect the organization.
 
 ---
-*Related: [AI Risk Assessment template](../templates/ai-risk-assessment.md) · [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md) · [NIST AI RMF Mapping](../docs/nist-ai-rmf-mapping.md)*
+*Related: [AI Risk Assessment template](../templates/ai-risk-assessment.md) · [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md) · [NIST AI RMF Crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md)*

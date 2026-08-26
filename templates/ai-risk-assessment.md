@@ -1,6 +1,6 @@
 # AI Risk Assessment
 
-Complete this for any AI use case flagged during [intake](ai-use-case-intake-form.md) as higher-risk. Structured around NIST AI RMF's four functions (Govern, Map, Measure, Manage) — see the [full mapping](../docs/nist-ai-rmf-mapping.md) for how this template lines up.
+Complete this for any AI use case flagged during [intake](ai-use-case-intake-form.md) as higher-risk. Structured around NIST AI RMF's four functions (Govern, Map, Measure, Manage) — see the [full crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md) for how this template lines up.
 
 ## System overview
 
@@ -37,7 +37,7 @@ Rate each dimension **Low / Medium / High**, then take the highest rating as the
 
 ## 3. Measure — known failure modes
 
-Check any that apply and describe mitigation. Cross-reference [OWASP AI security mapping](../docs/owasp-ai-mapping.md) for the security-specific items.
+Check any that apply and describe mitigation. Cross-reference [OWASP AI security mapping](../docs/standards/owasp-ai-mapping.md) for the security-specific items.
 
 - [ ] **Hallucination / factual error** — mitigation:
 - [ ] **Bias / disparate impact** across protected groups — mitigation:

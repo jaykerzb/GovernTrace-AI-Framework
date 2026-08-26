@@ -25,7 +25,7 @@ A rough self-assessment to figure out where your org is today and what "next" lo
 ## Level 3 — Measured
 
 - Re-review cadences are tracked and enforced, not just documented
-- Bias/fairness and security testing (see [OWASP mapping](owasp-ai-mapping.md)) are routine for relevant systems, with results logged
+- Bias/fairness and security testing (see [OWASP mapping](standards/owasp-ai-mapping.md)) are routine for relevant systems, with results logged
 - Incidents are tracked and feed back into policy/process updates
 - **Next step:** formalize metrics into leadership reporting; consider whether a certifiable standard (ISO/IEC 42001) is worth pursuing
 

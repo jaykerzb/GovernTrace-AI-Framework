@@ -1,8 +1,10 @@
 # GovernTrace AI Framework
 
-A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — mapped to [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) and [OWASP AI security guidance](https://owasp.org/www-project-top-10-for-large-language-model-applications/) so it holds up to outside scrutiny.
+A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
 
 This is **not** a compliance product or legal advice — it's a starting point you adapt to your organization, industry, and jurisdiction.
+
+> **Note:** the intake and risk-assessment templates here are intentionally lightweight (plain markdown, filled in by hand). For teams that outgrow that and want intake/assessment tracked as live, structured data with workflow automation, that's the direction of the companion [GovernTrace AI Platform](#) (in development) — this repo will remain the standalone, no-infrastructure-required version.
 
 ## Who this is for
 
@@ -46,22 +48,25 @@ That's a working Level 2 governance program (see the [Maturity Model](docs/matur
 ├── checklists/
 │   └── pre-deployment-checklist.md   # Go-live gate, low-risk and high-risk tracks
 └── docs/
-    ├── nist-ai-rmf-mapping.md        # How this maps to NIST AI RMF
-    ├── owasp-ai-mapping.md           # How this maps to OWASP LLM/ML Top 10
     ├── roles-and-raci.md             # Who owns what
-    └── maturity-model.md             # Self-assessment: where are you, what's next
+    ├── maturity-model.md             # Self-assessment: where are you, what's next
+    └── standards/
+        ├── nist-ai-rmf-crosswalk.md      # Subcategory-level mapping to NIST AI RMF
+        ├── iso-42001-crosswalk.md        # Clause/Annex A mapping to ISO/IEC 42001
+        ├── eu-ai-act-risk-tiers.md       # Risk-tier triage against the EU AI Act
+        └── owasp-ai-mapping.md           # LLM/ML Top 10 security checklist mapping
 ```
 
 ## How deep to go
 
 - **Just need something today?** Adopt the policy, use the intake form and pre-deployment checklist. That alone puts a stop to ungoverned AI sprawl.
 - **Shipping AI features regularly?** Add the risk assessment and vendor due-diligence templates into your existing PR/release process.
-- **Need to show this to auditors, customers, or a board?** Use the [NIST AI RMF mapping](docs/nist-ai-rmf-mapping.md) and [maturity model](docs/maturity-model.md) to frame what you've built in terms they recognize.
+- **Need to show this to auditors, customers, or a board?** Use the [NIST AI RMF crosswalk](docs/standards/nist-ai-rmf-crosswalk.md) and [maturity model](docs/maturity-model.md) to frame what you've built in terms they recognize. If you're EU-exposed, also check [EU AI Act risk tiers](docs/standards/eu-ai-act-risk-tiers.md); if certification is on the table, see the [ISO/IEC 42001 crosswalk](docs/standards/iso-42001-crosswalk.md).
 
 ## Scope and limitations
 
 - Templates are deliberately framework-agnostic markdown — no tooling lock-in, easy to drop into a wiki, Notion, or a `governance/` folder in your existing repo.
-- This does not implement or certify compliance with any specific regulation (EU AI Act, NIST AI RMF, ISO/IEC 42001). It gives you a structured starting point; involve legal/compliance for anything regulator-facing.
+- This does not implement or certify compliance with any specific regulation (EU AI Act, NIST AI RMF, ISO/IEC 42001) — the [standards crosswalks](docs/standards/) show *directional* alignment and honest gaps, not certification. Involve legal/compliance for anything regulator-facing.
 - Security guidance here is a checklist, not a penetration test — high-risk systems still need real security review.
 
 ## Contributing
