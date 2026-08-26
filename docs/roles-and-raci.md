@@ -27,12 +27,14 @@ R = Responsible, A = Accountable, C = Consulted, I = Informed
 | Pre-deployment sign-off — low risk | R/A | I | | |
 | Pre-deployment sign-off — high risk | R | C | C | A |
 | Periodic re-review | R | A | C (if applicable) | I |
-| Incident response | R | A | R | I |
+| Incident response ([runbook](../templates/incident-response-runbook.md)) | R | A | R | I |
+| Board/leadership reporting ([template](../templates/board-reporting-template.md)) | I | R/A | C | I |
 
 ## Cadence
 
 - **Tool inventory review:** quarterly — prune unused tools, confirm nothing is running unapproved.
 - **Policy review:** annually, or immediately after a material AI regulation change or major incident.
 - **Risk re-review:** per the schedule set in each system's [Risk Assessment](../templates/ai-risk-assessment.md) (Low: annual, Medium: 6-monthly, High: quarterly).
+- **Board reporting:** quarterly, using the [Board Reporting Template](../templates/board-reporting-template.md).
 
 For where this fits in your maturity journey, see the [Maturity Model](maturity-model.md).

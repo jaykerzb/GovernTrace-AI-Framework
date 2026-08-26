@@ -16,15 +16,17 @@ For use cases with no regulated data, no material decision-making, and human rev
 Everything in the low-risk track, plus:
 
 - [ ] [AI Risk Assessment](../templates/ai-risk-assessment.md) completed and signed off
+- [ ] [Model Card](../templates/model-card.md) completed for each model involved
 - [ ] If third-party: [Vendor Due Diligence](../templates/vendor-due-diligence.md) completed
+- [ ] [Data Retention Schedule](../templates/data-retention-schedule.md) set for this system
 - [ ] Security review completed (data flows, access controls, secrets handling)
 - [ ] Human review/override step tested and confirmed working, not just documented
-- [ ] Bias/fairness check run if the system affects people differentially (even a basic disparity check across known groups)
+- [ ] [Bias & Fairness Test](../templates/bias-fairness-testing-guide.md) run if the system affects people differentially
 - [ ] Prompt injection / adversarial input testing done for anything accepting untrusted input — see [OWASP AI mapping](../docs/standards/owasp-ai-mapping.md)
 - [ ] Rollback plan documented — how do you turn this off fast if it misbehaves?
 - [ ] Monitoring/alerting in place for anomalous outputs or usage spikes
 - [ ] User-facing disclosure drafted, if users interact with the AI directly
-- [ ] Incident response contact/process confirmed for this system
+- [ ] [Incident Response Runbook](../templates/incident-response-runbook.md) contact/process confirmed for this system
 - [ ] Re-review date set and calendared (owner is not "figure it out later")
 
 ## Go-live sign-off

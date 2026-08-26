@@ -44,11 +44,11 @@ Every AI-assisted output used in a customer-facing, financial, legal, HR, or saf
 
 ## 7. Incident reporting
 
-Report suspected data leakage, harmful/biased output, or policy violations to [contact/channel] within [timeframe, e.g. 24 hours]. See your incident response process for AI-specific incidents.
+Report suspected data leakage, harmful/biased output, or policy violations to [contact/channel] within [timeframe, e.g. 24 hours]. See the [AI Incident Response Runbook](../templates/incident-response-runbook.md) for how reports are triaged and handled.
 
 ## 8. Enforcement
 
 Violations are handled under [Org Name]'s standard conduct/disciplinary policy. This policy is reviewed at least annually and whenever new AI regulation or major AI tooling changes affect the organization.
 
 ---
-*Related: [AI Risk Assessment template](../templates/ai-risk-assessment.md) · [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md) · [NIST AI RMF Crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md)*
+*Related: [AI Risk Assessment template](../templates/ai-risk-assessment.md) · [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md) · [Incident Response Runbook](../templates/incident-response-runbook.md) · [Glossary](../docs/glossary.md) · [NIST AI RMF Crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md)*
