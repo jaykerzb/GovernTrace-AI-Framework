@@ -1,6 +1,6 @@
 # GovernTrace AI Framework
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Version](https://img.shields.io/badge/version-1.3.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), [GDPR](docs/standards/gdpr-mapping.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
 
@@ -99,6 +99,50 @@ examples/                                 # Fully filled-out worked examples
 └── loan-prequalification-chatbot/        # Banking scenario, every template completed end to end
 ```
 
+## Framework map
+
+How the pieces connect, end to end:
+
+```mermaid
+flowchart TD
+    Glossary["Glossary<br/>(shared vocabulary)"] --> AUP
+    AUP["Acceptable Use<br/>Policy"] --> Intake["Use-Case<br/>Intake Form"]
+    Intake -->|low risk| LowTrack["Pre-Deployment Checklist<br/>(low-risk track)"]
+    Intake -->|higher risk| RA["AI Risk<br/>Assessment"]
+
+    RA --> MV["Model Validation &<br/>Test Set Guide"]
+    RA --> BF["Bias & Fairness<br/>Testing Guide"]
+    RA -->|third-party tool| VDD["Vendor Due<br/>Diligence"]
+    MV --> MC["Model Card"]
+    BF --> MC
+    VDD --> DRS["Data Retention<br/>Schedule"]
+
+    MC --> HighTrack["Pre-Deployment Checklist<br/>(medium/high-risk track)"]
+    DRS --> HighTrack
+    Sectors["Sector Pack<br/>(if applicable)"] -.overlay.-> RA
+    Sectors -.overlay.-> HighTrack
+
+    LowTrack --> Inventory["AI Tool<br/>Inventory"]
+    HighTrack --> Inventory
+
+    Inventory --> Reporting["Board Reporting<br/>Template"]
+    Incident["Incident Response<br/>Runbook"] --> Reporting
+    AUP -.triggers.-> Incident
+
+    Training["Training &<br/>Awareness Plan"] -.supports.-> RACI["Roles & RACI"]
+    RACI -.assigns owners across.-> Intake
+    RACI -.assigns owners across.-> RA
+    RACI -.assigns owners across.-> Incident
+
+    Audit["Internal Audit<br/>Checklist"] -.audits the whole program.-> Inventory
+    Audit -.audits the whole program.-> RA
+    Audit -.audits the whole program.-> Reporting
+
+    Standards["Standards Crosswalks<br/>(NIST/ISO/EU AI Act/GDPR/OWASP)"] -.reference layer.-> RA
+```
+
+Solid arrows are the sequence a single use case moves through. Dashed arrows are cross-cutting — they apply across many use cases at once rather than sitting in the linear flow.
+
 ## How deep to go
 
 - **Just need something today?** Adopt the policy, use the intake form and pre-deployment checklist. That alone puts a stop to ungoverned AI sprawl.
@@ -115,7 +159,7 @@ examples/                                 # Fully filled-out worked examples
 
 ## Contributing
 
-Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for what's useful to contribute and how to propose something bigger than a typo fix. See [CHANGELOG.md](CHANGELOG.md) for version history.
+Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for what's useful to contribute and how to propose something bigger than a typo fix, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for how we expect people to treat each other here. See [CHANGELOG.md](CHANGELOG.md) for version history and [SECURITY.md](SECURITY.md) to report a security concern.
 
 ## License
 

@@ -6,6 +6,17 @@ All notable changes to this project are documented here. Format loosely follows 
 
 Nothing yet.
 
+## [1.3.0] — 2026-08-26
+
+Repo-hygiene and navigability pass following a full link-integrity audit (545 cross-references checked, zero broken).
+
+### Added
+- [SECURITY.md](SECURITY.md) — how to report a genuinely unsafe template recommendation or accidentally committed sensitive data
+- A Mermaid framework map in the README showing how every artifact connects, from intake through deployment, reporting, and audit
+
+### Fixed
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) existed but was never linked from the README — now referenced in the Contributing section
+
 ## [1.2.0] — 2026-08-26
 
 Closes the last remaining gap explicitly flagged in the NIST AI RMF crosswalk (Measure 2.1–2.3: test set representativeness/validity), which v1.1.0 didn't fully address.
@@ -46,7 +57,8 @@ First tagged release. Establishes the full v1 scope: core governance workflow, s
 - Repository hygiene: CONTRIBUTING.md, CODE_OF_CONDUCT.md, issue/PR templates, .gitattributes
 
 ---
-[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/releases/tag/v1.0.0
