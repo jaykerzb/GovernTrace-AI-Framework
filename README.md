@@ -30,7 +30,7 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 | **Data retention** | A schedule for how long AI-related data (prompts, outputs, logs) is kept and when it's deleted |
 | **Incident response** | A runbook for triaging, containing, and closing out AI incidents |
 | **Reporting** | A board/executive reporting template to keep leadership informed on AI risk posture |
-| **Sector packs** | Regulatory overlays for [banking/financial services](sectors/banking-financial-services/README.md), [healthcare](sectors/healthcare/README.md), [insurance](sectors/insurance/README.md), [public sector](sectors/public-sector/README.md), and [retail/e-commerce](sectors/retail-ecommerce/README.md) |
+| **Sector packs** | Regulatory overlays for [banking/financial services](sectors/banking-financial-services/README.md), [healthcare](sectors/healthcare/README.md), [insurance](sectors/insurance/README.md), [public sector](sectors/public-sector/README.md), [retail/e-commerce](sectors/retail-ecommerce/README.md), [education](sectors/education/README.md), [technology/SaaS](sectors/technology-saas/README.md), and [manufacturing/critical infrastructure](sectors/manufacturing-critical-infrastructure/README.md) |
 
 ## Quick start
 
@@ -78,7 +78,10 @@ sectors/                                  # Regulatory overlays layered on the c
 ├── healthcare/README.md                  # HIPAA, FDA SaMD, clinical/coverage AI
 ├── insurance/README.md                   # NAIC AI Model Bulletin, state rating/claims rules
 ├── public-sector/README.md               # Due process, procurement, algorithmic accountability laws
-└── retail-ecommerce/README.md            # FTC dark patterns, algorithmic pricing, AI-washing
+├── retail-ecommerce/README.md            # FTC dark patterns, algorithmic pricing, AI-washing
+├── education/README.md                   # FERPA, COPPA, academic-decision explainability
+├── technology-saas/README.md             # Provider/deployer status, downstream regulatory pass-through
+└── manufacturing-critical-infrastructure/README.md  # Physical safety, OT/IT boundary, fail-safe design
 
 examples/                                 # Fully filled-out worked examples
 └── loan-prequalification-chatbot/        # Banking scenario, every template completed end to end

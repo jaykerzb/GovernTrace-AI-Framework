@@ -13,6 +13,9 @@ None of this is legal advice. Regulatory regimes named in each pack change, and 
 | [Insurance](insurance/README.md) | Carriers, MGAs, insurtechs — underwriting, pricing, claims |
 | [Public Sector / Government](public-sector/README.md) | Government agencies and vendors serving them |
 | [Retail / E-commerce](retail-ecommerce/README.md) | Consumer-facing personalization, pricing, and marketing AI |
+| [Education](education/README.md) | K-12 districts, higher ed, ed-tech — grading, admissions, proctoring |
+| [Technology / SaaS / AI-Native](technology-saas/README.md) | Companies building AI-powered products used by other businesses |
+| [Manufacturing / Critical Infrastructure](manufacturing-critical-infrastructure/README.md) | Manufacturers, utilities, OT/ICS operators — physical safety risk |
 
 ## How to use a pack
 
