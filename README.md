@@ -94,7 +94,7 @@ sectors/                                  # Regulatory overlays layered on the c
 
 ## Contributing
 
-Issues and PRs welcome — especially real-world feedback on where a template was too heavy, too light, or missing something for a specific industry.
+Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for what's useful to contribute and how to propose something bigger than a typo fix.
 
 ## License
 
