@@ -46,6 +46,8 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 
 That's a working Level 2 governance program (see the [Maturity Model](docs/maturity-model.md)). Everything else in `docs/` and `sectors/` is there for when you want to go deeper.
 
+Not sure what any of this looks like filled in? See the [worked example](examples/loan-prequalification-chatbot/README.md) — a fictional bank's loan pre-qualification chatbot walked through every template above, end to end.
+
 ## Repository structure
 
 ```
@@ -77,6 +79,9 @@ sectors/                                  # Regulatory overlays layered on the c
 ├── insurance/README.md                   # NAIC AI Model Bulletin, state rating/claims rules
 ├── public-sector/README.md               # Due process, procurement, algorithmic accountability laws
 └── retail-ecommerce/README.md            # FTC dark patterns, algorithmic pricing, AI-washing
+
+examples/                                 # Fully filled-out worked examples
+└── loan-prequalification-chatbot/        # Banking scenario, every template completed end to end
 ```
 
 ## How deep to go
