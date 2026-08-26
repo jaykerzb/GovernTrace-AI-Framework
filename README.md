@@ -6,7 +6,7 @@ A practical, ready-to-use AI governance framework for organizations that need to
 
 This is **not** a compliance product or legal advice — it's a starting point you adapt to your organization, industry, and jurisdiction.
 
-> **Note:** the intake and risk-assessment templates here are intentionally lightweight (plain markdown, filled in by hand). For teams that outgrow that and want intake/assessment tracked as live, structured data with workflow automation, that's the direction of the companion [GovernTrace AI Platform]((https://github.com/jaykerzb/GovernTrace-AI)) (in development) — this repo will remain the standalone, no-infrastructure-required version.
+> **Note:** the intake and risk-assessment templates here are intentionally lightweight (plain markdown, filled in by hand). For teams that outgrow that and want intake/assessment tracked as live, structured data with workflow automation, that's the direction of the companion [GovernTrace AI Platform](https://github.com/jaykerzb/GovernTrace-AI) (in development) — this repo will remain the standalone, no-infrastructure-required version.
 
 ## Who this is for
 
