@@ -1,6 +1,6 @@
 # GovernTrace AI Framework
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Version](https://img.shields.io/badge/version-1.2.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), [GDPR](docs/standards/gdpr-mapping.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
 
@@ -28,6 +28,7 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 | **Development lifecycle gates** | Checklists that plug into your existing release process |
 | **Vendor oversight** | Due-diligence questions specific to AI vendors (data use, model transparency, security) |
 | **Model documentation** | Standardized model cards so every model in use has a documented intended use, evaluated performance, and known limitations |
+| **Model validation** | A test set design and validation methodology so performance claims are backed by real, representative testing, not vibes |
 | **Fairness testing** | A working methodology for testing AI outputs for bias/disparate impact across groups |
 | **Data retention** | A schedule for how long AI-related data (prompts, outputs, logs) is kept and when it's deleted |
 | **Incident response** | A runbook for triaging, containing, and closing out AI incidents |
@@ -42,7 +43,7 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 0. **Agree on terms**: have your governance group read the [Glossary](docs/glossary.md) first — it defines AI system types and the vocabulary every other template assumes.
 1. **Read and adapt** the [Acceptable Use Policy](policies/acceptable-use-policy.md) — fill in the brackets, run it through your normal policy approval process, publish it.
 2. **Stand up intake**: point anyone requesting a new AI tool or building an AI feature at the [Use-Case Intake Form](templates/ai-use-case-intake-form.md), and start an [AI Tool Inventory](templates/ai-tool-inventory.md) to track everything that comes through it.
-3. **Assess what needs it**: use cases flagged as higher-risk during intake get a full [AI Risk Assessment](templates/ai-risk-assessment.md), and a [Model Card](templates/model-card.md) if a new model is involved.
+3. **Assess what needs it**: use cases flagged as higher-risk during intake get a full [AI Risk Assessment](templates/ai-risk-assessment.md); a new model gets [validated](templates/model-validation-testing-guide.md) and documented in a [Model Card](templates/model-card.md).
 4. **Vet vendors**: any third-party AI tool goes through [Vendor Due Diligence](templates/vendor-due-diligence.md) before approval, with a [Data Retention Schedule](templates/data-retention-schedule.md) set for it.
 5. **Gate deployment**: every AI feature or tool goes through the [Pre-Deployment Checklist](checklists/pre-deployment-checklist.md) (low-risk or medium/high-risk track) before go-live — Medium/High risk systems affecting people also get a [Bias & Fairness Test](templates/bias-fairness-testing-guide.md).
 6. **Assign ownership and train people**: use [Roles & RACI](docs/roles-and-raci.md) to name who's accountable for each step, then run the [Training & Awareness Plan](templates/training-and-awareness-plan.md) so the process is actually usable, not just documented.
@@ -64,6 +65,7 @@ Not sure what any of this looks like filled in? See the [worked example](example
 │   ├── ai-risk-assessment.md         # Full risk assessment (NIST-aligned)
 │   ├── vendor-due-diligence.md       # Third-party AI vendor vetting
 │   ├── model-card.md                 # Standardized per-model documentation
+│   ├── model-validation-testing-guide.md # Test set design and validation methodology
 │   ├── bias-fairness-testing-guide.md # Methodology for testing outputs for disparate impact
 │   ├── data-retention-schedule.md    # How long AI-related data is kept, per system
 │   ├── incident-response-runbook.md  # Triage → contain → notify → remediate → close

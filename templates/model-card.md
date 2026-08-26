@@ -27,6 +27,8 @@ A short, standardized record of what a model is, how it was evaluated, and what 
 
 ## Evaluated performance
 
+*Filled in from a completed [Model Validation & Test Set Design Guide](model-validation-testing-guide.md) — don't fill this in without one behind it.*
+
 | Metric | Result | Test set / method | Date evaluated |
 |---|---|---|---|
 | | | | |
@@ -56,4 +58,4 @@ A short, standardized record of what a model is, how it was evaluated, and what 
 | Deprecation/retirement plan (if applicable) | |
 
 ---
-*Related: [AI Risk Assessment](ai-risk-assessment.md) · [Vendor Due Diligence](vendor-due-diligence.md) · [Glossary](../docs/glossary.md)*
+*Related: [AI Risk Assessment](ai-risk-assessment.md) · [Model Validation & Test Set Design Guide](model-validation-testing-guide.md) · [Vendor Due Diligence](vendor-due-diligence.md) · [Glossary](../docs/glossary.md)*

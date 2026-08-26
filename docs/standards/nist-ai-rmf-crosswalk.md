@@ -32,7 +32,7 @@ Status legend: **✅ Covered** — an artifact directly addresses this · **🟡
 | Subcategory | What NIST asks for | Mapped artifact | Status |
 |---|---|---|---|
 | Measure 1.1–1.3 | Approaches for measuring risk identified and applied; metrics documented | Risk Assessment §3 (failure modes); [OWASP AI Mapping](owasp-ai-mapping.md) | 🟡 — this repo gives you the checklist, not the test suite |
-| Measure 2.1–2.3 | Test sets representative of deployment context; evaluated for validity/reliability | Not templated — depends heavily on your system; see Pre-Deployment Checklist "bias/fairness check" as a minimum bar | ⬜ |
+| Measure 2.1–2.3 | Test sets representative of deployment context; evaluated for validity/reliability | [Model Validation & Test Set Design Guide](../../templates/model-validation-testing-guide.md) | ✅ |
 | Measure 2.4–2.6 | Fairness and bias evaluated across relevant groups; environmental/sustainability impact considered where material | [Pre-Deployment Checklist](../../checklists/pre-deployment-checklist.md) — Medium/High track | 🟡 |
 | Measure 2.7–2.9 | Security and resilience evaluated; privacy risk evaluated | [OWASP AI Mapping](owasp-ai-mapping.md); Vendor Due Diligence "security" section | ✅ |
 | Measure 2.10–2.13 | Explainability/interpretability evaluated; human oversight effectiveness assessed | Risk Assessment §2 "explainability"; §4 "human review before output used" | 🟡 |
@@ -50,8 +50,8 @@ Status legend: **✅ Covered** — an artifact directly addresses this · **🟡
 
 ## Honest gaps
 
-This framework now gives strong coverage of **Govern**, **Map**, and **Manage**, and decent coverage of **Measure** — the remaining Measure gap is inherent, not a documentation oversight: subcategories like Measure 2.1–2.3 and 4.1–4.3 call for running actual statistical evaluations (test-set validity, adversarial robustness) on *your specific model*, which can't be templated as markdown regardless of how thorough the surrounding process is. If you need full Measure coverage, plan to pair this framework with:
-- A bias/fairness testing methodology suited to your system (start from the [Bias & Fairness Testing Guide](../../templates/bias-fairness-testing-guide.md), but expect to bring in a qualified analyst for high-stakes decisions)
+This framework now gives strong coverage across all four functions — **Govern**, **Map**, **Manage**, and **Measure**. What remains isn't a missing template but an inherent limit: subcategories like Measure 4.1–4.3 (statistical validity of your specific measurement approach) ultimately require a qualified analyst running the actual numbers on your actual model — a template can structure that work and prompt the right questions ([Model Validation & Test Set Design Guide](../../templates/model-validation-testing-guide.md), [Bias & Fairness Testing Guide](../../templates/bias-fairness-testing-guide.md)) but can't substitute for it. If your use case is high-stakes, plan to pair this framework with:
+- A statistician or ML engineer qualified to review test set design and validity, not just fill out the template
 - Adversarial/red-team testing for anything customer-facing or high-risk (see [OWASP AI Mapping](owasp-ai-mapping.md) as a starting checklist)
 - A defined metrics dashboard tracked over time, not just point-in-time assessments
 

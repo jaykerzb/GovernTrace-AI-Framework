@@ -6,6 +6,17 @@ All notable changes to this project are documented here. Format loosely follows 
 
 Nothing yet.
 
+## [1.2.0] — 2026-08-26
+
+Closes the last remaining gap explicitly flagged in the NIST AI RMF crosswalk (Measure 2.1–2.3: test set representativeness/validity), which v1.1.0 didn't fully address.
+
+### Added
+- [Model Validation & Test Set Design Guide](templates/model-validation-testing-guide.md) — a general accuracy/reliability validation methodology (test set design, drift monitoring, re-validation cadence), distinct from the [Bias & Fairness Testing Guide](templates/bias-fairness-testing-guide.md), which only covers group fairness
+
+### Changed
+- [NIST AI RMF Crosswalk](docs/standards/nist-ai-rmf-crosswalk.md) Measure function now shows no remaining flagged gaps — the "Honest gaps" section now describes an inherent limit (a template can't substitute for a qualified analyst's judgment on statistical validity) rather than a missing artifact
+- [Model Card](templates/model-card.md), [Pre-Deployment Checklist](checklists/pre-deployment-checklist.md), and [Bias & Fairness Testing Guide](templates/bias-fairness-testing-guide.md) now reference the new guide
+
 ## [1.1.0] — 2026-08-26
 
 Closes gaps explicitly flagged as unaddressed in the v1.0.0 standards crosswalks — a self-directed audit of this repo's own "Honest gaps" sections.
@@ -35,6 +46,7 @@ First tagged release. Establishes the full v1 scope: core governance workflow, s
 - Repository hygiene: CONTRIBUTING.md, CODE_OF_CONDUCT.md, issue/PR templates, .gitattributes
 
 ---
-[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/releases/tag/v1.0.0

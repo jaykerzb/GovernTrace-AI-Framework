@@ -16,6 +16,7 @@ For use cases with no regulated data, no material decision-making, and human rev
 Everything in the low-risk track, plus:
 
 - [ ] [AI Risk Assessment](../templates/ai-risk-assessment.md) completed and signed off
+- [ ] [Model Validation & Test Set Design Guide](../templates/model-validation-testing-guide.md) completed for each model involved
 - [ ] [Model Card](../templates/model-card.md) completed for each model involved
 - [ ] If third-party: [Vendor Due Diligence](../templates/vendor-due-diligence.md) completed
 - [ ] [Data Retention Schedule](../templates/data-retention-schedule.md) set for this system

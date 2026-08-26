@@ -57,4 +57,4 @@ You will not use all of these — pick what fits the decision type, and document
 Feed results into the [Risk Assessment](ai-risk-assessment.md) §3 (bias/disparate impact row) and, for anything customer- or employment-facing, keep this documentation — it's your evidence of good-faith diligence if a decision is ever challenged.
 
 ---
-*Related: [AI Risk Assessment](ai-risk-assessment.md) · [Model Card](model-card.md) · [NIST AI RMF Crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md)*
+*Related: [AI Risk Assessment](ai-risk-assessment.md) · [Model Card](model-card.md) · [Model Validation & Test Set Design Guide](model-validation-testing-guide.md) (checks accuracy/reliability — a different question from fairness) · [NIST AI RMF Crosswalk](../docs/standards/nist-ai-rmf-crosswalk.md)*
