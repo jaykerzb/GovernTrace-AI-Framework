@@ -1,5 +1,7 @@
 # GovernTrace AI Framework
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
 
 This is **not** a compliance product or legal advice — it's a starting point you adapt to your organization, industry, and jurisdiction.
@@ -102,7 +104,7 @@ examples/                                 # Fully filled-out worked examples
 
 ## Contributing
 
-Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for what's useful to contribute and how to propose something bigger than a typo fix.
+Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for what's useful to contribute and how to propose something bigger than a typo fix. See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## License
 
