@@ -16,7 +16,8 @@ Complete before onboarding any third-party AI tool or model provider. Pair with 
 - Does the vendor use your inputs/outputs to train or fine-tune their models? [ ] Yes [ ] No [ ] Opt-out available
 - Where is data processed and stored (region)? Relevant if you have data residency requirements.
 - What is the data retention period, and can you request deletion?
-- Does the contract include a Data Processing Agreement (DPA) if personal data is involved?
+- Does the contract include a Data Processing Agreement (DPA) if personal data is involved? See [GDPR Mapping](../docs/standards/gdpr-mapping.md) for what this needs to cover.
+- If data crosses borders (e.g., EU personal data processed outside the EU/UK): is there a valid transfer mechanism in place?
 - Sub-processors: does the vendor rely on other AI providers downstream (e.g. a wrapper around a foundation model)? List them.
 
 ## Security
@@ -59,4 +60,4 @@ Complete before onboarding any third-party AI tool or model provider. Pair with 
 **Next scheduled review:** [recommend annually, or on contract renewal]
 
 ---
-*Approved vendors should be added to your internal AI Tool Inventory (a simple running list — tool, vendor, risk tier, approval date, review date — is enough to start; a spreadsheet works fine).*
+*Approved vendors should be added to the [AI Tool Inventory](ai-tool-inventory.md).*

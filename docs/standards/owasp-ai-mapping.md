@@ -31,4 +31,4 @@ This framework's security-relevant checks draw on the [OWASP Top 10 for LLM Appl
 
 This is a working checklist, not a penetration test. High-risk or customer-facing systems should get an actual security review or pen test from someone qualified to do adversarial testing.
 
-See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md)
+See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md) · [GDPR Mapping](gdpr-mapping.md)

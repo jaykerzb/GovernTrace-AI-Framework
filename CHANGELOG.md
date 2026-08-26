@@ -6,6 +6,20 @@ All notable changes to this project are documented here. Format loosely follows 
 
 Nothing yet.
 
+## [1.1.0] — 2026-08-26
+
+Closes gaps explicitly flagged as unaddressed in the v1.0.0 standards crosswalks — a self-directed audit of this repo's own "Honest gaps" sections.
+
+### Added
+- [AI Tool Inventory](templates/ai-tool-inventory.md) — closes the NIST AI RMF (Govern 1.6–1.7) and ISO/IEC 42001 (Clause 8/A.4) gap around a templated tool inventory
+- [Training & Awareness Plan](templates/training-and-awareness-plan.md) — closes the NIST AI RMF (Govern 3.1–3.2) and ISO/IEC 42001 (Clause 7) competence/training gap
+- [Internal Audit Checklist](docs/internal-audit-checklist.md) — closes the ISO/IEC 42001 (Clause 9) internal audit gap and the NIST AI RMF (Govern 1.5) ongoing-monitoring gap; audits whether the governance program itself is functioning, not just whether documents exist
+- [GDPR Mapping](docs/standards/gdpr-mapping.md) — a fifth standards crosswalk, covering lawful basis, DPIAs, Article 22 automated decision-making, and the AI-specific training-data-erasure problem
+
+### Changed
+- Updated [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md) and [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md) crosswalks to reflect newly-closed gaps
+- Wired the four new artifacts into the main README, Roles & RACI, Maturity Model, and relevant existing templates
+
 ## [1.0.0] — 2026-08-26
 
 First tagged release. Establishes the full v1 scope: core governance workflow, standards crosswalks, expanded template library, sector packs, a worked example, and repo hygiene.
@@ -21,5 +35,6 @@ First tagged release. Establishes the full v1 scope: core governance workflow, s
 - Repository hygiene: CONTRIBUTING.md, CODE_OF_CONDUCT.md, issue/PR templates, .gitattributes
 
 ---
-[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/jaykerzb/GovernTrace-AI-Framework/releases/tag/v1.0.0

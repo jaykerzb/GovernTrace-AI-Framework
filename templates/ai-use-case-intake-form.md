@@ -48,7 +48,7 @@ If **none** are checked, this may qualify for lightweight approval — see [Pre-
 | Date | |
 | Outcome | [ ] Approved [ ] Approved with conditions [ ] Needs full risk assessment [ ] Rejected |
 | Conditions / notes | |
-| Added to tool inventory? | Y/N |
+| Added to [AI Tool Inventory](ai-tool-inventory.md)? | Y/N |
 
 ---
-*Next steps: high-risk items → [AI Risk Assessment](ai-risk-assessment.md). Third-party tools → [Vendor Due Diligence](vendor-due-diligence.md). All approved tools ship with a completed [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md).*
+*Next steps: high-risk items → [AI Risk Assessment](ai-risk-assessment.md). Third-party tools → [Vendor Due Diligence](vendor-due-diligence.md). All approved tools ship with a completed [Pre-Deployment Checklist](../checklists/pre-deployment-checklist.md) and get logged in the [AI Tool Inventory](ai-tool-inventory.md).*

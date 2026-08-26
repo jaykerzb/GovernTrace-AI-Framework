@@ -12,14 +12,15 @@ A rough self-assessment to figure out where your org is today and what "next" lo
 
 - An [Acceptable Use Policy](../policies/acceptable-use-policy.md) exists and has been communicated
 - Leadership knows AI is being used somewhere, but there's no formal intake or inventory
-- **Next step:** stand up the [Use-Case Intake Form](../templates/ai-use-case-intake-form.md) and start a tool inventory
+- **Next step:** stand up the [Use-Case Intake Form](../templates/ai-use-case-intake-form.md) and start an [AI Tool Inventory](../templates/ai-tool-inventory.md)
 
 ## Level 2 — Managed (this framework's default target)
 
 - All new AI tools/use cases go through [intake](../templates/ai-use-case-intake-form.md)
 - Higher-risk use cases get a [Risk Assessment](../templates/ai-risk-assessment.md) before launch
 - Third-party tools go through [vendor due diligence](../templates/vendor-due-diligence.md)
-- A named [Governance Lead](roles-and-raci.md) exists and the tool inventory is kept current
+- A named [Governance Lead](roles-and-raci.md) exists and the [tool inventory](../templates/ai-tool-inventory.md) is kept current
+- Basic [training](../templates/training-and-awareness-plan.md) has been delivered — at minimum, everyone knows the policy exists and where to report a concern
 - **Next step:** start measuring — track how many assessments are completed on time, how many incidents occur, whether re-reviews actually happen
 
 ## Level 3 — Measured
@@ -27,6 +28,7 @@ A rough self-assessment to figure out where your org is today and what "next" lo
 - Re-review cadences are tracked and enforced, not just documented
 - Bias/fairness and security testing (see [OWASP mapping](standards/owasp-ai-mapping.md)) are routine for relevant systems, with results logged
 - Incidents are tracked and feed back into policy/process updates
+- The [Internal Audit Checklist](internal-audit-checklist.md) has been run at least once, independent of the Governance Lead, and its findings acted on
 - **Next step:** formalize metrics into leadership reporting; consider whether a certifiable standard (ISO/IEC 42001) is worth pursuing
 
 ## Level 4 — Optimized

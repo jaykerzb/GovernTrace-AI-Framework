@@ -30,7 +30,7 @@ AI systems create data types a standard retention policy often misses: prompts/i
 
 ## Regulatory inputs to consider
 
-- **GDPR / similar regimes:** data minimization and storage-limitation principles apply to AI-processed personal data same as any other personal data — don't keep prompts/outputs containing personal data longer than the stated purpose requires.
+- **GDPR / similar regimes:** data minimization and storage-limitation principles apply to AI-processed personal data same as any other personal data — don't keep prompts/outputs containing personal data longer than the stated purpose requires. See the [GDPR Mapping](../docs/standards/gdpr-mapping.md) for the AI-specific wrinkle around training-data erasure.
 - **Sector-specific rules** (HIPAA, financial recordkeeping, etc.): may set a *minimum* retention that overrides a shorter default — check before deleting.
 - **Litigation holds:** any system under legal hold suspends normal deletion — coordinate with Legal before auto-deleting logs for a system involved in a dispute or investigation.
 

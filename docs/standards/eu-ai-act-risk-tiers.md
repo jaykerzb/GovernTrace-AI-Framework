@@ -50,4 +50,4 @@ Most everyday AI use (spam filters, AI-enabled video games, recommendation engin
 
 This mapping is directional, not authoritative — a "Medium" in this framework's generic risk model can still land in the EU AI Act's High-risk annex if it touches employment, credit, or essential services, regardless of how contained the blast radius feels internally. Always check the actual use case against the High-risk list above, not just the tier label.
 
-See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md)
+See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [GDPR Mapping](gdpr-mapping.md) — note the AI Act and GDPR are legally distinct regimes that often both apply to the same system

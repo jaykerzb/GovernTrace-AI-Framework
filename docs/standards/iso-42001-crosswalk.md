@@ -11,9 +11,9 @@
 | **4. Context of the organization** | Determine internal/external issues, interested parties, and AIMS scope | [Acceptable Use Policy](../../policies/acceptable-use-policy.md) intro/scope section | 🟡 |
 | **5. Leadership** | Top management commitment; AI policy established; roles/responsibilities assigned | [Roles & RACI](../roles-and-raci.md); Acceptable Use Policy owner field | ✅ |
 | **6. Planning** | Risk and opportunity assessment; AI objectives set; change planning | [AI Risk Assessment](../../templates/ai-risk-assessment.md) | ✅ |
-| **7. Support** | Resources, competence, awareness, communication, documented information control | 🟡 — competence/training not templated here | ⬜ |
+| **7. Support** | Resources, competence, awareness, communication, documented information control | [Training & Awareness Plan](../../templates/training-and-awareness-plan.md); [AI Tool Inventory](../../templates/ai-tool-inventory.md) (resources) | ✅ |
 | **8. Operation** | Operational planning and control; AI system impact assessment; third-party/supplier management | [Pre-Deployment Checklist](../../checklists/pre-deployment-checklist.md); [Vendor Due Diligence](../../templates/vendor-due-diligence.md) | ✅ |
-| **9. Performance evaluation** | Monitoring, measurement, internal audit, management review | [Maturity Model](../maturity-model.md); Risk Assessment re-review cadence | 🟡 — no internal audit template provided |
+| **9. Performance evaluation** | Monitoring, measurement, internal audit, management review | [Internal Audit Checklist](../internal-audit-checklist.md); [Board Reporting Template](../../templates/board-reporting-template.md) (management review); [Maturity Model](../maturity-model.md) | ✅ |
 | **10. Improvement** | Nonconformity and corrective action; continual improvement | Acceptable Use Policy §7 incident reporting | 🟡 |
 
 ## Annex A controls (selected, high-relevance)
@@ -22,7 +22,7 @@ ISO 42001's Annex A has 38 controls across 10 themes. The ones most directly cov
 
 | Annex A theme | Mapped artifact |
 |---|---|
-| A.4 — Resources for AI systems (documented data, tooling, third-party components) | [Vendor Due Diligence](../../templates/vendor-due-diligence.md) |
+| A.4 — Resources for AI systems (documented data, tooling, third-party components) | [Vendor Due Diligence](../../templates/vendor-due-diligence.md); [AI Tool Inventory](../../templates/ai-tool-inventory.md) |
 | A.5 — Impact assessment | [AI Risk Assessment](../../templates/ai-risk-assessment.md) |
 | A.6 — AI system lifecycle (design, verification, deployment, operation, retirement) | [Pre-Deployment Checklist](../../checklists/pre-deployment-checklist.md) |
 | A.7 — Data for AI systems | Acceptable Use Policy §3 (data rules); Risk Assessment data sensitivity dimension |
@@ -33,6 +33,6 @@ Themes **not** covered here and worth building out if certification is the goal:
 
 ## Should you actually pursue certification?
 
-Certification makes sense if customers or regulators are asking for it, or if AI is core to your product and a competitive differentiator. For most small/mid orgs, reaching a solid, evidenced **Level 2–3** on the [Maturity Model](../maturity-model.md) gets you the actual risk reduction; certification is a separate, resource-intensive decision layered on top — budget for an external auditor and a genuine internal audit function before committing.
+Certification makes sense if customers or regulators are asking for it, or if AI is core to your product and a competitive differentiator. For most small/mid orgs, reaching a solid, evidenced **Level 2–3** on the [Maturity Model](../maturity-model.md) gets you the actual risk reduction; certification is a separate, resource-intensive decision layered on top — budget for an external auditor. The [Internal Audit Checklist](../internal-audit-checklist.md) gives you a starting internal-audit function, but a certification body will still require its own formal audit.
 
-See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md)
+See also: [NIST AI RMF Crosswalk](nist-ai-rmf-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md) · [GDPR Mapping](gdpr-mapping.md)

@@ -9,10 +9,10 @@ Status legend: **✅ Covered** — an artifact directly addresses this · **🟡
 | Subcategory | What NIST asks for | Mapped artifact | Status |
 |---|---|---|---|
 | Govern 1.1–1.4 | Legal/regulatory requirements understood; risk tolerance and org policies documented and communicated | [Acceptable Use Policy](../../policies/acceptable-use-policy.md) | ✅ |
-| Govern 1.5 | Ongoing monitoring and periodic review of the risk management process itself | [Maturity Model](../maturity-model.md) cadence section | 🟡 |
-| Govern 1.6–1.7 | Inventory of AI systems maintained; processes for third-party/decommissioned systems | Tool inventory (see [Vendor Due Diligence](../../templates/vendor-due-diligence.md) footer) | 🟡 — inventory format is your choice; not templated here |
+| Govern 1.5 | Ongoing monitoring and periodic review of the risk management process itself | [Internal Audit Checklist](../internal-audit-checklist.md); [Maturity Model](../maturity-model.md) cadence section | ✅ |
+| Govern 1.6–1.7 | Inventory of AI systems maintained; processes for third-party/decommissioned systems | [AI Tool Inventory](../../templates/ai-tool-inventory.md) | ✅ |
 | Govern 2.1–2.3 | Roles, responsibilities, and reporting structure for AI risk defined; org has capacity to carry them out | [Roles & RACI](../roles-and-raci.md) | ✅ |
-| Govern 3.1–3.2 | Workforce diversity/training so teams can identify AI risks; decision-makers understand limitations | Not templated — recommend using [OWASP AI Mapping](owasp-ai-mapping.md) as team training material | ⬜ |
+| Govern 3.1–3.2 | Workforce diversity/training so teams can identify AI risks; decision-makers understand limitations | [Training & Awareness Plan](../../templates/training-and-awareness-plan.md) | ✅ |
 | Govern 4.1–4.3 | Organizational culture prioritizes risk management; risks documented and used to inform decisions | [AI Risk Assessment](../../templates/ai-risk-assessment.md) §5 sign-off | ✅ |
 | Govern 5.1–5.2 | Mechanisms for external/internal stakeholder feedback | [AI Use-Case Intake Form](../../templates/ai-use-case-intake-form.md); Acceptable Use Policy §7 incident reporting | 🟡 |
 | Govern 6.1–6.2 | Policies for third-party risks (vendors, open-source models, data) | [Vendor Due Diligence](../../templates/vendor-due-diligence.md) | ✅ |
@@ -37,7 +37,7 @@ Status legend: **✅ Covered** — an artifact directly addresses this · **🟡
 | Measure 2.7–2.9 | Security and resilience evaluated; privacy risk evaluated | [OWASP AI Mapping](owasp-ai-mapping.md); Vendor Due Diligence "security" section | ✅ |
 | Measure 2.10–2.13 | Explainability/interpretability evaluated; human oversight effectiveness assessed | Risk Assessment §2 "explainability"; §4 "human review before output used" | 🟡 |
 | Measure 3.1–3.3 | Mechanisms for tracking identified risks over time; feedback incorporated | Risk Assessment re-review cadence; [Maturity Model](../maturity-model.md) Level 3 | 🟡 |
-| Measure 4.1–4.3 | Measurement approaches documented and reviewed for validity | Not templated | ⬜ |
+| Measure 4.1–4.3 | Measurement approaches documented and reviewed for validity | [Internal Audit Checklist](../internal-audit-checklist.md) §2 (quality review of completed assessments) | 🟡 — reviews process quality, not statistical validity of a specific model's metrics |
 
 ## MANAGE — response and continuous improvement
 
@@ -50,9 +50,9 @@ Status legend: **✅ Covered** — an artifact directly addresses this · **🟡
 
 ## Honest gaps
 
-This framework gives you strong coverage of **Govern** and **Map**, decent coverage of **Manage**, and partial coverage of **Measure** — because Measure is largely about running actual technical evaluations (bias testing, adversarial robustness, statistical validity) that depend on your specific system and can't be templated as markdown. If you need full Measure coverage, plan to pair this framework with:
-- A bias/fairness testing methodology suited to your system (e.g. disparate impact analysis)
+This framework now gives strong coverage of **Govern**, **Map**, and **Manage**, and decent coverage of **Measure** — the remaining Measure gap is inherent, not a documentation oversight: subcategories like Measure 2.1–2.3 and 4.1–4.3 call for running actual statistical evaluations (test-set validity, adversarial robustness) on *your specific model*, which can't be templated as markdown regardless of how thorough the surrounding process is. If you need full Measure coverage, plan to pair this framework with:
+- A bias/fairness testing methodology suited to your system (start from the [Bias & Fairness Testing Guide](../../templates/bias-fairness-testing-guide.md), but expect to bring in a qualified analyst for high-stakes decisions)
 - Adversarial/red-team testing for anything customer-facing or high-risk (see [OWASP AI Mapping](owasp-ai-mapping.md) as a starting checklist)
 - A defined metrics dashboard tracked over time, not just point-in-time assessments
 
-See also: [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md) · [OWASP AI Mapping](owasp-ai-mapping.md)
+See also: [ISO/IEC 42001 Crosswalk](iso-42001-crosswalk.md) · [EU AI Act Risk Tiers](eu-ai-act-risk-tiers.md) · [GDPR Mapping](gdpr-mapping.md) · [OWASP AI Mapping](owasp-ai-mapping.md)

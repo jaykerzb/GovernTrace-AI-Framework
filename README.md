@@ -1,8 +1,8 @@
 # GovernTrace AI Framework
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Version](https://img.shields.io/badge/version-1.1.0-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
+A practical, ready-to-use AI governance framework for organizations that need to manage AI risk but don't have a dedicated compliance team. Fill in a few templates, adopt one policy, and you have a working governance program — crosswalked against [NIST AI RMF](docs/standards/nist-ai-rmf-crosswalk.md), [ISO/IEC 42001](docs/standards/iso-42001-crosswalk.md), the [EU AI Act's risk tiers](docs/standards/eu-ai-act-risk-tiers.md), [GDPR](docs/standards/gdpr-mapping.md), and [OWASP AI security guidance](docs/standards/owasp-ai-mapping.md) so it holds up to outside scrutiny.
 
 This is **not** a compliance product or legal advice — it's a starting point you adapt to your organization, industry, and jurisdiction.
 
@@ -32,19 +32,23 @@ You don't need a compliance team to use this — the [Roles & RACI](docs/roles-a
 | **Data retention** | A schedule for how long AI-related data (prompts, outputs, logs) is kept and when it's deleted |
 | **Incident response** | A runbook for triaging, containing, and closing out AI incidents |
 | **Reporting** | A board/executive reporting template to keep leadership informed on AI risk posture |
+| **Tool inventory** | A schema for tracking every AI tool in use, catching shadow AI, and feeding board reporting |
+| **Training & awareness** | A tiered training plan so the policy and process actually get used, not just published |
+| **Internal audit** | A checklist for auditing whether the governance program itself is functioning, not just whether documents exist |
 | **Sector packs** | Regulatory overlays for [banking/financial services](sectors/banking-financial-services/README.md), [healthcare](sectors/healthcare/README.md), [insurance](sectors/insurance/README.md), [public sector](sectors/public-sector/README.md), [retail/e-commerce](sectors/retail-ecommerce/README.md), [education](sectors/education/README.md), [technology/SaaS](sectors/technology-saas/README.md), and [manufacturing/critical infrastructure](sectors/manufacturing-critical-infrastructure/README.md) |
 
 ## Quick start
 
 0. **Agree on terms**: have your governance group read the [Glossary](docs/glossary.md) first — it defines AI system types and the vocabulary every other template assumes.
 1. **Read and adapt** the [Acceptable Use Policy](policies/acceptable-use-policy.md) — fill in the brackets, run it through your normal policy approval process, publish it.
-2. **Stand up intake**: point anyone requesting a new AI tool or building an AI feature at the [Use-Case Intake Form](templates/ai-use-case-intake-form.md).
+2. **Stand up intake**: point anyone requesting a new AI tool or building an AI feature at the [Use-Case Intake Form](templates/ai-use-case-intake-form.md), and start an [AI Tool Inventory](templates/ai-tool-inventory.md) to track everything that comes through it.
 3. **Assess what needs it**: use cases flagged as higher-risk during intake get a full [AI Risk Assessment](templates/ai-risk-assessment.md), and a [Model Card](templates/model-card.md) if a new model is involved.
 4. **Vet vendors**: any third-party AI tool goes through [Vendor Due Diligence](templates/vendor-due-diligence.md) before approval, with a [Data Retention Schedule](templates/data-retention-schedule.md) set for it.
 5. **Gate deployment**: every AI feature or tool goes through the [Pre-Deployment Checklist](checklists/pre-deployment-checklist.md) (low-risk or medium/high-risk track) before go-live — Medium/High risk systems affecting people also get a [Bias & Fairness Test](templates/bias-fairness-testing-guide.md).
-6. **Assign ownership**: use [Roles & RACI](docs/roles-and-raci.md) to name who's accountable for each step — even if it's one person wearing four hats.
+6. **Assign ownership and train people**: use [Roles & RACI](docs/roles-and-raci.md) to name who's accountable for each step, then run the [Training & Awareness Plan](templates/training-and-awareness-plan.md) so the process is actually usable, not just documented.
 7. **Be ready for incidents and reporting**: keep the [Incident Response Runbook](templates/incident-response-runbook.md) on hand, and brief leadership periodically with the [Board Reporting Template](templates/board-reporting-template.md).
-8. **Apply your sector pack**: if you're in banking, healthcare, insurance, public sector, or retail, layer the matching [sector pack](sectors/README.md) on top for regulatory-specific risk categories and checklist items.
+8. **Apply your sector pack**: if you're in a covered industry, layer the matching [sector pack](sectors/README.md) on top for regulatory-specific risk categories and checklist items.
+9. **Check your own work**: run the [Internal Audit Checklist](docs/internal-audit-checklist.md) annually to confirm the program is actually functioning as designed, not just that the documents exist.
 
 That's a working Level 2 governance program (see the [Maturity Model](docs/maturity-model.md)). Everything else in `docs/` and `sectors/` is there for when you want to go deeper.
 
@@ -63,17 +67,21 @@ Not sure what any of this looks like filled in? See the [worked example](example
 │   ├── bias-fairness-testing-guide.md # Methodology for testing outputs for disparate impact
 │   ├── data-retention-schedule.md    # How long AI-related data is kept, per system
 │   ├── incident-response-runbook.md  # Triage → contain → notify → remediate → close
-│   └── board-reporting-template.md   # Periodic leadership/board briefing
+│   ├── board-reporting-template.md   # Periodic leadership/board briefing
+│   ├── ai-tool-inventory.md          # Schema for tracking every AI tool in use, catching shadow AI
+│   └── training-and-awareness-plan.md # Tiered training so the process actually gets used
 ├── checklists/
 │   └── pre-deployment-checklist.md   # Go-live gate, low-risk and high-risk tracks
 └── docs/
     ├── glossary.md                   # AI system types and shared definitions
     ├── roles-and-raci.md             # Who owns what
     ├── maturity-model.md             # Self-assessment: where are you, what's next
+    ├── internal-audit-checklist.md   # Audits whether the program itself is functioning
     └── standards/
         ├── nist-ai-rmf-crosswalk.md      # Subcategory-level mapping to NIST AI RMF
         ├── iso-42001-crosswalk.md        # Clause/Annex A mapping to ISO/IEC 42001
         ├── eu-ai-act-risk-tiers.md       # Risk-tier triage against the EU AI Act
+        ├── gdpr-mapping.md                # Data protection concepts most relevant to AI
         └── owasp-ai-mapping.md           # LLM/ML Top 10 security checklist mapping
 sectors/                                  # Regulatory overlays layered on the core templates
 ├── banking-financial-services/README.md  # SR 11-7, ECOA/Reg B, fair lending, BSA/AML
@@ -93,8 +101,9 @@ examples/                                 # Fully filled-out worked examples
 
 - **Just need something today?** Adopt the policy, use the intake form and pre-deployment checklist. That alone puts a stop to ungoverned AI sprawl.
 - **Shipping AI features regularly?** Add the risk assessment and vendor due-diligence templates into your existing PR/release process.
-- **Need to show this to auditors, customers, or a board?** Use the [NIST AI RMF crosswalk](docs/standards/nist-ai-rmf-crosswalk.md) and [maturity model](docs/maturity-model.md) to frame what you've built in terms they recognize. If you're EU-exposed, also check [EU AI Act risk tiers](docs/standards/eu-ai-act-risk-tiers.md); if certification is on the table, see the [ISO/IEC 42001 crosswalk](docs/standards/iso-42001-crosswalk.md).
-- **In a regulated industry?** Check the [sector packs](sectors/README.md) — banking, healthcare, insurance, public sector, and retail each get sector-specific risk categories and regulatory context layered on top of the core templates.
+- **Need to show this to auditors, customers, or a board?** Use the [NIST AI RMF crosswalk](docs/standards/nist-ai-rmf-crosswalk.md) and [maturity model](docs/maturity-model.md) to frame what you've built in terms they recognize. If you're EU-exposed, also check [EU AI Act risk tiers](docs/standards/eu-ai-act-risk-tiers.md); if you process personal data broadly, check the [GDPR mapping](docs/standards/gdpr-mapping.md); if certification is on the table, see the [ISO/IEC 42001 crosswalk](docs/standards/iso-42001-crosswalk.md) and run the [Internal Audit Checklist](docs/internal-audit-checklist.md) first.
+- **In a regulated industry?** Check the [sector packs](sectors/README.md) — eight industries each get sector-specific risk categories and regulatory context layered on top of the core templates.
+- **Worried the program looks good on paper but isn't really working?** Run the [Internal Audit Checklist](docs/internal-audit-checklist.md) — it checks coverage (is everything actually going through the process), quality (are completed documents rubber-stamped or real), and whether the controls you documented actually function.
 
 ## Scope and limitations
 
